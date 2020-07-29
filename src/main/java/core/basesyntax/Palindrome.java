@@ -24,6 +24,6 @@ public class Palindrome {
         String cleanText = text.replaceAll("[^a-zA-Z0-9]", "").toUpperCase();
         StringBuilder builder = new StringBuilder(cleanText).reverse();
 
-        return builder.toString().toUpperCase().equals(cleanText);
+        return builder.toString().equals(cleanText);
     }
 }
